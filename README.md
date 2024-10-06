@@ -1,0 +1,5 @@
+# SimonGame
+## English Description:
+The Simon Game is a memory game where the player must replicate a randomly generated sequence of colors and sounds. At each level, a new color is added to the sequence. The player needs to click the color buttons in the same order as shown. If the player makes a mistake, the game ends. The goal is to remember and reproduce the longest sequence possible.
+## French Description:
+Le Simon Game est un jeu de mémoire où le joueur doit reproduire une séquence de couleurs et de sons générée aléatoirement. À chaque niveau, une nouvelle couleur est ajoutée à la séquence. Le joueur doit cliquer sur les boutons de couleur dans le même ordre que celui montré. Si le joueur fait une erreur, le jeu se termine. Le but est de mémoriser et de reproduire correctement la séquence la plus longue possible.
