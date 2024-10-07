@@ -1,10 +1,10 @@
 body {
   text-align: center;
-  background-color: #011F3F;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #01356c;
 }
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
   font-size: 4rem;
   margin:  5%;
   color: #FEF2BF;
@@ -21,7 +21,6 @@ body {
 #playButton .startGame {
   height: 150px;
   width: 150px;
-  font-family: 'Press Start 2P', cursive;
   border: 5px solid #FEF2BF;
   border-radius: 25%;
   margin: auto;
@@ -29,6 +28,12 @@ body {
 
 .container {
   width: 30%;
+}
+
+#maxLevel {
+  margin-top: 150px;
+  font-size: 5rem;
+  color: #FEF2BF;
 }
 
 .container .btn {
@@ -71,7 +76,7 @@ body {
 }
 
 footer {
-  margin-top: 50px;
-  font-family: 'Press Start 2P', cursive;
+  margin-top: 150px;
+  font-size: 2rem;
   color: #FEF2BF;
 }

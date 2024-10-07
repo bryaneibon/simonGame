@@ -2,6 +2,8 @@ var buttonColours = ["red", "blue", "green", "yellow"];
 var gamePattern = [];
 var userClickedPattern = [];
 const GAME_OVER = "Game Over, Press The 'Play' Button to Restart.";
+const MAX_LEVEL = "Max Level Reach";
+var userMaxRecord = 0;
 
 /**
  * Start the game
@@ -87,6 +89,8 @@ function playSound(name) {
 function gameOver() {
     $("#level-title").text(GAME_OVER);
     $("body").addClass("game-over");
+    $("#maxLevel").text(MAX_LEVEL + " : " + getMaxlevel(level));
+    
     setTimeout(function() {
         $("body").removeClass("game-over");
     }, 100);
@@ -101,4 +105,11 @@ function resetGame() {
     level = 0;
     gamePattern.splice(0, gamePattern.length);
     userClickedPattern.splice(0, userClickedPattern.length);
+}
+
+function getMaxlevel(level) {
+    if (level > userMaxRecord) {
+        userMaxRecord = level;
+    }
+    return userMaxRecord;
 }
