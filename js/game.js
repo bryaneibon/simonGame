@@ -21,6 +21,13 @@ $("#playButton").click(function () {
     }
 });
 
+$("#restartButton").click(function () {
+    $("#level-title").text("Let's Start Over ! Press The 'Play' Button to Begin");
+    setTimeout(function() {
+        restartgame();
+    }, 500);
+});
+
 function nextSequence() {
     // Inside nextSequence(), increase the level by 1 every time nextSequence() is called.
     level++;
@@ -105,6 +112,11 @@ function resetGame() {
     level = 0;
     gamePattern.splice(0, gamePattern.length);
     userClickedPattern.splice(0, userClickedPattern.length);
+}
+
+function restartgame() {
+    $("#maxLevel").text(MAX_LEVEL + " : " + getMaxlevel(level));
+    resetGame();
 }
 
 function getMaxlevel(level) {
